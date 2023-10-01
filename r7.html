@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remote Control</title>
+<style>
+  body{
+   
+    text-align: center;
+                padding-top: 8%;
+            }
+button {
+    width: 10%;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color:white;
+    border-width: thin;
+    border-color:initial;
+}
+
+    #forward{
+              position: relative;
+              margin-top: 9%;
+              margin-right: 3%;
+              text-align: center;
+    }
+    #stop{
+                position: relative;
+                margin-top: 6%;
+                border-color: red;
+            }
+    #left{
+                position: relative;
+                margin-top: 6%;
+                margin-right: 3%;
+            }
+    #right{
+                position: relative;
+                margin-top: 6%;
+                margin-left: 3%;
+            }
+    #backward{
+                position: relative;
+                margin-top: 3%;
+                
+            }
+</style>
+</head>
+<body>
+    <form method="POST" action="remote_control.php">
+        <button id="forward" type="submit" name="direction" value="forward">Forward</button>
+        <br>
+        <button id="left" type="submit" name="direction" value="left">Left</button>
+        <button id="stop" type="submit" name="direction" value="stop">Stop</button>
+        <button id="right" type="submit" name="direction" value="right">Right</button>
+        <br>
+        <button id="backward" type="submit" name="direction" value="backward">Backward</button>
+    </form>
+</body>
+</html>
